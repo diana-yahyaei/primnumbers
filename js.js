@@ -1,10 +1,14 @@
 function isPrimeNumber(num) {
-  //2n-1 until now!
-
-  if (num % 2 === 1 || num === 2) {
-    return "it is prime number";
+  if (num < 2) {
+    return false;
+  }
+  if (num <= 3) {
+    return true;
+  }
+  if (num % 2 === 0 || num % 3 === 0) {
+    return false;
   } else {
-    return "it is not prime number";
+    return true;
   }
 }
 
